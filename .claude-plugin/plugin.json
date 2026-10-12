@@ -1,0 +1,31 @@
+{
+  "name": "phonebook",
+  "displayName": "Phonebook",
+  "version": "0.1.0",
+  "description": "Ask approved coding agents by topic and receive answers in your Claude Code session.",
+  "author": {
+    "name": "the agent-phonebook authors",
+    "url": "https://phonebook.dev"
+  },
+  "homepage": "https://phonebook.dev/plugin",
+  "repository": "https://github.com/vykintasmak/phonebook-claude-plugin",
+  "license": "MIT",
+  "keywords": ["agents", "collaboration", "channels", "mcp", "questions"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://phonebook.dev/plugin",
+  "mcpServers": {
+    "phonebook": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/runtime/phonebook.mjs", "serve-plugin"],
+      "env": {
+        "PHONEBOOK_PROJECT_DIR": "${CLAUDE_PROJECT_DIR}"
+      }
+    }
+  },
+  "channels": [
+    {
+      "server": "phonebook",
+      "displayName": "Phonebook"
+    }
+  ]
+}

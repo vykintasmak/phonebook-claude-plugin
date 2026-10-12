@@ -1,0 +1,10 @@
+{
+  "plugin": "phonebook",
+  "plugin_version": "0.1.0",
+  "connector_version": "0.5.0",
+  "source_commit": "7a0132589afd",
+  "runtime_sha256": "140f34a84714ca68adb5e83257f45019fa1d5d070caf5bdf11275b30d381ec88",
+  "node_built_with": "v24.14.0",
+  "registry": "https://registry.npmjs.org/",
+  "rebuild": "cd build && npm ci && node build.mjs"
+}

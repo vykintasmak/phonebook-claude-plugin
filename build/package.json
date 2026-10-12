@@ -1,0 +1,17 @@
+{
+  "name": "phonebook-claude-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Build-only manifest for the Phonebook Claude Code plugin runtime (../runtime/phonebook.mjs). Not installed with the plugin.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "esbuild": "0.28.1",
+    "ws": "8.22.0",
+    "zod": "4.6.5"
+  }
+}
